@@ -96,9 +96,9 @@ clear
 #########################
 # USERNAME
 rm -f /usr/bin/user
-username=$(curl https://raw.githubusercontent.com/KP-CHANNEL-KP/KP-VPS-MANGER/main/izin | grep $MYIP | awk '{print $2}')
+username=$(curl https://raw.githubusercontent.com/KP-CHANNEL-KP/KP-VPN-MANGER/main/izin | grep $MYIP | awk '{print $2}')
 echo "$username" >/usr/bin/user
-expx=$(curl https://raw.githubusercontent.com/KP-CHANNEL-KP/KP-VPS-MANGER/main/izin | grep $MYIP | awk '{print $3}')
+expx=$(curl https://raw.githubusercontent.com/KP-CHANNEL-KP/KP-VPN-MANGER/main/izin | grep $MYIP | awk '{print $3}')
 echo "$expx" >/usr/bin/e
 # DETAIL ORDER
 username=$(cat /usr/bin/user)
@@ -122,7 +122,7 @@ mai="datediff "$Exp" "$DATE""
 Info="(${green}Active${NC})"
 Error="(${RED}ExpiRED${NC})"
 today=`date -d "0 days" +"%Y-%m-%d"`
-Exp1=$(curl https://raw.githubusercontent.com/KP-CHANNEL-KP/KP-VPS-MANGER/main/izin | grep $MYIP | awk '{print $4}')
+Exp1=$(curl https://raw.githubusercontent.com/KP-CHANNEL-KP/KP-VPN-MANGER/main/izin | grep $MYIP | awk '{print $4}')
 if [[ $today < $Exp1 ]]; then
 sts="${Info}"
 else
@@ -131,7 +131,7 @@ fi
 echo -e "\e[32mloading...\e[0m"
 clear
 # REPO    
-    REPO="https://raw.githubusercontent.com/KP-CHANNEL-KP/KP-VPS-MANGER/main/"
+    REPO="https://raw.githubusercontent.com/KP-CHANNEL-KP/KP-VPN-MANGER/main/"
 
 ####
 start=$(date +%s)
@@ -315,7 +315,7 @@ restart_system(){
     TIMEZONE=$(printf '%(%H:%M:%S)T')
     TEXT="
 <code>────────────────────</code>
-<b>⚡AUTOSCRIPT PREMIUM⚡</b>
+<b>⚡KP AUTOSCRIPT PREMIUM⚡</b>
 <code>────────────────────</code>
 <code>Owner    :</code><code>$username</code>
 <code>Domain   :</code><code>$domain</code>
