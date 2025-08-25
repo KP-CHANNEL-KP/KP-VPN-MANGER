@@ -2,14 +2,14 @@
 
 ### INSTALL SCRIPT 
 ```
-apt install -y && apt update -y && apt upgrade -y && apt install lolcat -y && gem install lolcat && wget -q https://raw.githubusercontent.com/KP-CHANNEL-KP/KP-VPS-MANGER/main/setup.sh && chmod +x setup.sh && ./setup.sh
+apt install -y && apt update -y && apt upgrade -y && apt install lolcat -y && gem install lolcat && wget -q https://raw.githubusercontent.com/KP-CHANNEL-KP/KP-VPN-MANGER/main/setup.sh && chmod +x setup.sh && ./setup.sh
 
 ```
 
 ### UPDATE MENU
 ```
 
-wget https://raw.githubusercontent.com/KP-CHANNEL-KP/KP-VPS-MANGER/main/update.sh && chmod +x update.sh && ./update.sh
+wget https://raw.githubusercontent.com/KP-CHANNEL-KP/KP-VPN-MANGER/main/update.sh && chmod +x update.sh && ./update.sh
 
 ```
 
